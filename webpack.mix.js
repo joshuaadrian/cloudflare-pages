@@ -9,11 +9,11 @@ let productionSourceMaps = false;
 // const domain    = 'cloudflare-pages.test';
 // const homedir   = require('os').homedir();
 
-// mix.setPublicPath('dist');
-// mix.setResourceRoot(`dist/`);
+mix.setPublicPath('dist');
+mix.setResourceRoot(`dist/`);
 
-// mix.setResourceRoot('./');
-// mix.setPublicPath(path.resolve('./'));
+mix.setResourceRoot('./');
+mix.setPublicPath(path.resolve('./'));
 
 // mix.webpackConfig({
 //   plugins: [
@@ -38,7 +38,7 @@ let productionSourceMaps = false;
 mix.autoload({
    jquery : ['$', 'window.$', 'window.jQuery']
 })
-// .setPublicPath('dist')
+.setPublicPath('dist')
 //.js('assets/scripts/app.js', 'dist/scripts')
 .sass('assets/styles/app.scss', 'dist/styles')
 .version()
