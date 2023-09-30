@@ -5,9 +5,9 @@ let webpack              = require('webpack');
 let path                 = require('path');
 let productionSourceMaps = false;
 
-const themename = 'cloudflare-pages';
-const domain    = 'cloudflare-pages.test';
-const homedir   = require('os').homedir();
+// const themename = 'cloudflare-pages';
+// const domain    = 'cloudflare-pages.test';
+// const homedir   = require('os').homedir();
 
 // mix.setPublicPath('dist');
 // mix.setResourceRoot(`dist/`);
@@ -39,7 +39,7 @@ mix.autoload({
    jquery : ['$', 'window.$', 'window.jQuery']
 })
 // .setPublicPath('dist')
-.js('assets/scripts/app.js', 'dist/scripts')
+//.js('assets/scripts/app.js', 'dist/scripts')
 .sass('assets/styles/app.scss', 'dist/styles')
 .version()
 // .browserSync({
