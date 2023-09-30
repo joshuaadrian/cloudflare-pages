@@ -38,27 +38,27 @@ mix.webpackConfig({
 mix.autoload({
    jquery : ['$', 'window.$', 'window.jQuery']
 })
-.setPublicPath('dist')
+// .setPublicPath('dist')
 .js('assets/scripts/app.js', 'dist/scripts')
 .sass('assets/styles/app.scss', 'dist/styles')
 .version()
-.browserSync({
-  proxy: {
-    target: 'https://' + domain
-  },
-  host: domain,
-  open: 'external',
-  https: {
-    key: homedir + '/.config/valet/Certificates/' + domain + '.key',
-    cert: homedir + '/.config/valet/Certificates/' + domain + '.crt',
-  },
-  files : [
-    '**/*.html',
-    'dist/**/*.css',
-    'dist/**/*.js'
-  ],
-  notify: false
-})
+// .browserSync({
+//   proxy: {
+//     target: 'https://' + domain
+//   },
+//   host: domain,
+//   open: 'external',
+//   https: {
+//     key: homedir + '/.config/valet/Certificates/' + domain + '.key',
+//     cert: homedir + '/.config/valet/Certificates/' + domain + '.crt',
+//   },
+//   files : [
+//     '**/*.html',
+//     'dist/**/*.css',
+//     'dist/**/*.js'
+//   ],
+//   notify: false
+// })
 .sourceMaps()
 .options({
   processCssUrls : false,
