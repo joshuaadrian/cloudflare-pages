@@ -15,25 +15,25 @@ const homedir   = require('os').homedir();
 // mix.setResourceRoot('./');
 // mix.setPublicPath(path.resolve('./'));
 
-mix.webpackConfig({
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    })
-  ],
-  watchOptions: {
-    ignored: [
-      path.posix.resolve(__dirname, './node_modules'),
-      path.posix.resolve(__dirname, './css'),
-      path.posix.resolve(__dirname, './js'),
-      path.posix.resolve(__dirname, './images')
-    ],
-  },
-  stats: {
-      children: true,
-  },
-});
+// mix.webpackConfig({
+//   plugins: [
+//     new webpack.ProvidePlugin({
+//       $: 'jquery',
+//       jQuery: 'jquery'
+//     })
+//   ],
+//   watchOptions: {
+//     ignored: [
+//       path.posix.resolve(__dirname, './node_modules'),
+//       path.posix.resolve(__dirname, './css'),
+//       path.posix.resolve(__dirname, './js'),
+//       path.posix.resolve(__dirname, './images')
+//     ],
+//   },
+//   stats: {
+//       children: true,
+//   },
+// });
 
 mix.autoload({
    jquery : ['$', 'window.$', 'window.jQuery']
