@@ -2,8 +2,8 @@ let mix = require('laravel-mix');
 
 require('laravel-mix-polyfill');
 
-mix.setPublicPath('dist');
-mix.setResourceRoot('dist');
+// mix.setPublicPath('dist');
+// mix.setResourceRoot('dist');
 
 mix.webpackConfig({
     stats: {
@@ -23,7 +23,7 @@ mix.autoload({
 })
 .version()
 .browserSync({
-  proxy : 'airhorny.test/docs',
+  proxy : 'cloudflare-pages.test',
   files : [
     '**/*.html',
     'dist/**/*.css',
