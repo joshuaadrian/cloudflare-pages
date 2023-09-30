@@ -1,6 +1,6 @@
 let mix = require('laravel-mix');
 
-require('laravel-mix-polyfill');
+// require('laravel-mix-polyfill');
 
 // mix.setPublicPath('dist');
 // mix.setResourceRoot('dist');
@@ -16,11 +16,6 @@ mix.autoload({
 })
 .js('assets/scripts/app.js', 'scripts')
 .sass('assets/styles/app.scss', 'styles')
-.polyfill({
-  enabled     : true,
-  useBuiltIns : "usage",
-  targets     : "firefox 50, IE 11"
-})
 .version()
 .browserSync({
   proxy : 'cloudflare-pages.test',
