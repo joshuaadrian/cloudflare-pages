@@ -2,8 +2,8 @@ let mix = require('laravel-mix');
 
 // require('laravel-mix-polyfill');
 
-// mix.setPublicPath('dist');
-// mix.setResourceRoot('dist');
+mix.setPublicPath('dist');
+mix.setResourceRoot('/');
 
 mix.webpackConfig({
     stats: {
